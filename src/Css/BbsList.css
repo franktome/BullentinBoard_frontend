@@ -1,0 +1,85 @@
+.bbs-container {
+    margin-top: 70px;
+    max-width: 1200px;
+    margin-left: auto; /* 왼쪽 여백 자동 */
+    margin-right: auto; /* 오른쪽 여백 자동 */
+    padding: 20px;
+  }
+  
+  .search-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .search-select,
+  .search-input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .search-button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .bbs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .bbs-table th,
+  .bbs-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .bbs-table th {
+    background-color: #f8f9fa;
+  }
+  
+  .bbs-title-link {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .bbs-title-link:hover {
+    text-decoration: underline;
+  }
+  
+  .no-data {
+    text-align: center;
+    color: #888;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .write-button-container {
+    text-align: center;
+  }
+  
+  .write-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .write-button:hover {
+    background-color: #218838;
+  }
+  

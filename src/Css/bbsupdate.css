@@ -1,0 +1,72 @@
+/* 전체 컨테이너 */
+.bbs-update-container {
+    max-width: 700px; /* 너비를 줄여 중앙에 깔끔하게 정렬 */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 테이블 스타일 */
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-size: 14px; /* 글자 크기 축소 */
+}
+
+.table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+/* 텍스트박스 및 텍스트영역 */
+textarea, input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* 파일 선택 영역 */
+.file-box p {
+    color: #888;
+    font-style: italic;
+    margin: 5px 0;
+}
+
+/* 파일 버튼 */
+.file-select-box input[type="file"] {
+    margin-top: 10px;
+}
+
+/* 수정하기 버튼 */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-container .btn {
+    padding: 10px 20px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container .btn:hover {
+    background-color: #0056b3;
+}
