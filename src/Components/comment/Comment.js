@@ -26,7 +26,7 @@ function Comment(props) {
 
     // 댓글 수정
     const updateComment = async () => {
-        if (auth?.email !== comment.commentWriterName) {
+        if (auth?.username !== comment.writer) {
             alert("댓글 수정 권한이 없습니다.");
             return;
         }
@@ -42,8 +42,8 @@ function Comment(props) {
                 `http://localhost:5000/board/${boardId}/comment/update/${commentId}`,
                 req
             );
-            alert("댓글이 성공적으로 수정되었습니다!");
-            props.getCommentList(page); // 업데이트된 댓글 목록 다시 불러오기
+            //alert("댓글이 성공적으로 수정되었습니다!");
+            props.getCommentList(props.page); // 업데이트된 댓글 목록 다시 불러오기
             setIsEditing(false); // 수정 모드 종료
         } catch (error) {
             console.error("댓글 수정 중 오류 발생:", error);
@@ -60,9 +60,9 @@ function Comment(props) {
             return;
         }
 
-        if (!window.confirm("정말로 이 댓글을 삭제하시겠습니까?")) {
-            return;
-        }
+        // if (!window.confirm("정말로 이 댓글을 삭제하시겠습니까?")) {
+        //     return;
+        // }
 
         const req = {
             user_email: auth?.email, // 이메일 추가

@@ -39,6 +39,10 @@ function CommentWrite(props) {
             console.log("[CommentWrite.js] createComment() success :D");
             console.log(response.data);
             alert("댓글을 성공적으로 등록했습니다 :D");
+            if (props.getCommentList) {
+                props.getCommentList(1);
+            }
+            setContent(""); // 댓글 작성 후 입력 필드 초기화
             //props.getCommentList(); 
             navigate(0); // 페이지 새로고침
         } catch (error) {

@@ -40,7 +40,7 @@ function BbsDetail() {
     const deleteBbs = async () => {
         try {
             await axios.delete(`http://localhost:5000/board/${boardId}`);
-            alert("게시글이 삭제되었습니다.");
+            // alert("게시글이 삭제되었습니다.");
             navigate("/bbslist"); // 목록으로 이동
         } catch (error) {
             console.error("게시글 삭제 중 오류 발생:", error);
